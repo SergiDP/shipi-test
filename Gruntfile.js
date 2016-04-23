@@ -37,4 +37,5 @@ module.exports = function (grunt) {
    */
 
   grunt.loadNpmTasks('grunt-shipit');
+  grunt.loadNpmTasks('shipit-deploy');
 };
