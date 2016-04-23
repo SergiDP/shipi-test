@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         workspace: '/tmp/shipit-test',
 
         // Project will be deployed in this directory.
-        deployTo: '/var/www/shipi-test',
+        deployTo: '/usr/src/shipi-test',
 
         // Repository url.
         repositoryUrl: pkg.repository.url,
