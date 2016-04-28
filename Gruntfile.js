@@ -1,5 +1,3 @@
-var pkg = require('./package.json');
-
 module.exports = function (grunt) {
 
   /**
@@ -7,35 +5,15 @@ module.exports = function (grunt) {
    */
 
   grunt.initConfig({
-    shipit: {
-      options: {
-        // Project will be build in this directory.
-        workspace: '/tmp/shipit-test',
-
-        // Project will be deployed in this directory.
-        deployTo: '/usr/src/shipi-test',
-
-        // Repository url.
-        repositoryUrl: pkg.repository.url,
-
-        // This files will not be transfered.
-        ignores: ['.git', 'node_modules'],
-
-        // Number of release to keep (for rollback).
-        keepReleases: 3
-      },
-
-    // Staging environment.
-      staging: {
-        servers: ['ec2-user@ec2-52-28-76-192.eu-central-1.compute.amazonaws.com']
-      }
+    jshint: {
+      all: ['routes/*.js']
     }
   });
 
   /**
-   * Load shipit task.
+   * load tasks
    */
 
-  grunt.loadNpmTasks('grunt-shipit');
-  grunt.loadNpmTasks('shipit-deploy');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+
 };
