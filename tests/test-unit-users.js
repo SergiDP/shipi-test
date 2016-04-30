@@ -11,7 +11,7 @@ describe('hello', function () {
 
 describe('bye', function () {
     it('should return adios mundo', function () {
-        expect(hello.bye()).to.equal("adios mundo");
+        expect(hello.bye()).to.equal("Adios mundo");
     });
 });
 
