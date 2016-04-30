@@ -7,6 +7,16 @@ module.exports = function (grunt) {
   grunt.initConfig({
     jshint: {
       all: ['routes/*.js']
+    },
+    simplemocha: {
+      options: {
+        globals: ['expect'],
+        timeout: 3000,
+        ignoreLeaks: false,
+        ui: 'bdd',
+        reporter: 'tap'
+      },
+      all: { src: ['tests/*.js'] }
     }
   });
 
@@ -15,6 +25,7 @@ module.exports = function (grunt) {
    */
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.registerTask('default', ['jshint']);
+  grunt.loadNpmTasks('grunt-simple-mocha');
+  grunt.registerTask('default', ['jshint', 'simplemocha']);
 
 };
