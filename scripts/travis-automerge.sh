@@ -14,7 +14,7 @@ TO_BRANCH="master"
 
 # Get the current branch
 export PAGER=cat
-CURRENT_BRANCH=$(git log -n 1 --pretty=%d HEAD | cut -d"," -f3 | cut -d" " -f2 | cut -d")" -f1)
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 echo "current branch is '$CURRENT_BRANCH'"
 
 # Create the URL to push merge to
