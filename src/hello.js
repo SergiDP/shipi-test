@@ -2,6 +2,12 @@
 
 module.exports = {
     hello: function(){
-        return "hola";
+        return "hola mundo";
+    },
+    bye: function(){
+        return "adios mundo";
+    },
+    holaSergi: function(){
+        return "hola sergi";
     }
 };
