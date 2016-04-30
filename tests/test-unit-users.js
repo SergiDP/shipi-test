@@ -17,6 +17,6 @@ describe('bye', function () {
 
 describe('holaSergi', function () {
     it('should return hola sergi', function () {
-        expect(hello.holaSergi()).to.equal("hola sergi");
+        expect(hello.holaSergi()).to.equal("hola Sergi");
     });
 });

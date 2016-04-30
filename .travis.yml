@@ -6,7 +6,7 @@ install: npm install
 env:
   global:
     secure: N0iuqcDq0jmmcGycGlQ98yXGM22pB0hcnDhIonsFCxML6WUDJzxcC0A61dgo9RFMB+3rUavw2go9/SWB6DbQ6uo8mzjzPPaphirzZcJCBrD1cjREatgLStwBbk45k+N13YdoiGB+0bH9DtjdGPix6ttLr4Sfv/5W6JrORbGJ7fndsZ59xENPxl05Bl9lbLq4t05ChLdw0lID2zXo0rhyb1zqVvWR3/SYLjcvQwiOQFZytrizFakCtCTHo/mx2MqQXn1jkpwCZ+36AcHRntKZ7sk5YEOMaXWGhhhBfOEV/qSOaEWE1hcoyySYps4nPQzk8FNECLpfArdnxzkhXBKizpbkqqeDTxj5XsRk/yLnWtiF31GLHB7746mjAJZQT1Gsz6Fr+ONu3xCFvV0gpxUqVB6iq1gVw7AB3aXH7uiWywAXtBEsrj85B51B2E4CjvB5EQy1tFi5ullEuVchr4yK3rFp5WF9Hg5MnLf4tHLH3S/x/gwZJuFE+oBeHErkpgYlpoTYesMrGNd/x56vpCUYOIjbOJWEXjJkabiXYeTj13Ax2gEbnD0+L4uGpiC0vmEqfiYhPy8Iqb1FBNo8zMUwjXaBogxUPF2vN5UjTCgolPHu8DI73JqbqiTyJ2YFKTrLtl+iEImVIwpY5wQalG8MR2kHa9SK9rCT+DytCXh72FE=
-
+sudo: false
 after_success:
   - "curl -o /tmp/travis-automerge https://raw.githubusercontent.com/SergiDP/travis-test/master/scripts/travis-automerge"
   - "chmod a+x /tmp/travis-automerge"
