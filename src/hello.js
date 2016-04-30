@@ -8,6 +8,6 @@ module.exports = {
         return "adios mundo";
     },
     holaSergi: function(){
-        return "hola sergi";
+        return "hola Sergi";
     }
 };
