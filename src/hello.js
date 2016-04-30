@@ -2,10 +2,10 @@
 
 module.exports = {
     hello: function(){
-        return "hola mundo";
+        return "Hola mundo";
     },
     bye: function(){
-        return "adios mundo";
+        return "Adios mundo";
     },
     holaSergi: function(){
         return "Hola Sergi";
