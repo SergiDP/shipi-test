@@ -5,13 +5,13 @@ var hello = require('../src/hello');
 
 describe('hello', function () {
     it('should return hola mundo', function () {
-        expect(hello.hello()).to.equal("hola mundo");
+        expect(hello.hello()).to.equal("Hola mundo");
     });
 });
 
 describe('bye', function () {
     it('should return adios mundo', function () {
-        expect(hello.bye()).to.equal("adios mundo");
+        expect(hello.bye()).to.equal("Adios mundo");
     });
 });
 
