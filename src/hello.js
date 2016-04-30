@@ -2,7 +2,7 @@
 
 module.exports = {
     hello: function(){
-        return "hola mundo";
+        return "Hola mundo";
     },
     bye: function(){
         return "Adios mundo";
