@@ -9,7 +9,7 @@ describe('hello', function () {
     });
 });
 
-describe('byeee', function () {
+describe('byee', function () {
     it('should return adios mundo', function () {
         expect(hello.bye()).to.equal("Adios mundo");
     });
