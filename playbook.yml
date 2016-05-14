@@ -1,0 +1,16 @@
+---
+- hosts: all
+  user: vagrant
+  sudo: true
+  sudo_user: root
+
+  roles:
+    - role: roles/ansible-nginx
+    - role: roles/ansible-softwares
+    - role: roles/ansible-mongodb
+    - role: roles/ansible-nodejs
+    - role: roles/ansible-nodejs-apps
+      # apps:
+      #   enabled:
+      #     - "/srv/myapp/"
+      #     - "/srv/anotherapp/"
