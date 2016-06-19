@@ -27,6 +27,9 @@ router.get('/logout', function(req, res){
   res.send("logged out");
 });
 
-
+router.get('/logout', function(req, res){
+  req.logout();
+  res.send("logged out");
+});
 
 module.exports = router;
