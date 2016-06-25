@@ -14,11 +14,9 @@ module.exports = function (grunt) {
         timeout: 3000,
         ignoreLeaks: false,
         ui: 'bdd',
-        reporter: 'XUnit'
+        reporter: 'tap'
       },
-      all: {
-        src: ['tests/*.js']
-      }
+      all: { src: ['tests/*.js'] }
     }
   });
 
