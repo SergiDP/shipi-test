@@ -16,11 +16,3 @@ describe('holaSergi', function () {
     holaSergi.verify();
 });
 
-
-
-
-
-
-console.log('callback called', holaSergi.called);
-console.log('callback count', holaSergi.callCount);
-console.log('callback return', holaSergi.returned('Hola Sergi'));
