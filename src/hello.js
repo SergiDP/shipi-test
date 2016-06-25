@@ -1,5 +1,5 @@
 
-//blao
+//blaoblao
 module.exports = {
     hello: function(){
         return "Hola mundo";
