@@ -30,7 +30,8 @@
     "passport-local": "^1.0.0",
     "redis": "^2.6.0-2",
     "serve-favicon": "~2.3.0",
-    "sinon": "^1.17.4"
+    "sinon": "^1.17.4",
+    "mocha": "2.5.2"
   },
   "repository": {
     "type": "git",
