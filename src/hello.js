@@ -5,7 +5,7 @@ module.exports = {
         return "Hola mundo";
     },
     bye: function(){
-        return "Adios mundoo";
+        return "Adios mundooooooo";
     },
     holaSergi: function(){
         return "Hola Sergi";
